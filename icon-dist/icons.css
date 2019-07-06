@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "icons";
+    src: url("./icons.eot?1a9ad294902b40db14fd3cf97ba3803b?#iefix") format("embedded-opentype"),
+url("./icons.woff2?1a9ad294902b40db14fd3cf97ba3803b") format("woff2"),
+url("./icons.woff?1a9ad294902b40db14fd3cf97ba3803b") format("woff"),
+url("./icons.ttf?1a9ad294902b40db14fd3cf97ba3803b") format("truetype"),
+url("./icons.svg?1a9ad294902b40db14fd3cf97ba3803b#icons") format("svg");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+    content: "\f101";
+}
+.icon-arrow-down-small:before {
+    content: "\f102";
+}
+.icon-arrow-left:before {
+    content: "\f103";
+}
+.icon-arrow-right:before {
+    content: "\f104";
+}
+.icon-arrow-up:before {
+    content: "\f105";
+}
+.icon-arrow-up-small:before {
+    content: "\f106";
+}
+.icon-banners:before {
+    content: "\f107";
+}
+.icon-calendar:before {
+    content: "\f108";
+}
+.icon-close:before {
+    content: "\f109";
+}
+.icon-details:before {
+    content: "\f10a";
+}
+.icon-general:before {
+    content: "\f10b";
+}
+.icon-links:before {
+    content: "\f10c";
+}
+.icon-login:before {
+    content: "\f10d";
+}
+.icon-message:before {
+    content: "\f10e";
+}
+.icon-negative:before {
+    content: "\f10f";
+}
+.icon-notification:before {
+    content: "\f110";
+}
+.icon-password:before {
+    content: "\f111";
+}
+.icon-payout:before {
+    content: "\f112";
+}
+.icon-personaldata:before {
+    content: "\f113";
+}
+.icon-positive:before {
+    content: "\f114";
+}
+.icon-postback:before {
+    content: "\f115";
+}
+.icon-profile:before {
+    content: "\f116";
+}
+.icon-quit:before {
+    content: "\f117";
+}
+.icon-refresh:before {
+    content: "\f118";
+}
+.icon-show:before {
+    content: "\f119";
+}
+.icon-trash:before {
+    content: "\f11a";
+}
+.icon-url:before {
+    content: "\f11b";
+}
+.icon-wallet:before {
+    content: "\f11c";
+}

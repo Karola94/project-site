@@ -1,5 +1,7 @@
 @import "variables";
 @import "mixins";
 
-@import "normalize";
+@import "../node_modules/normalize.css/normalize.css";
 @import "layout";
+
+@import "../icon-dist/icons.css"
