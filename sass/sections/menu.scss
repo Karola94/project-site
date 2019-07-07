@@ -1,0 +1,96 @@
+@import "../variables";
+@import "../mixins";
+
+.menu {
+    position: fixed;
+    background-color: $menu-bg-color;
+    width: 188px;
+    height: 100vh;   
+    
+    .column-options {
+        @include column-display;        
+
+        .menu-header {
+            @include menu-header;
+
+            .logo {
+                padding: 18px 46px 18px 20px;                
+            }
+            .fa-bars {
+                width: 18px;
+                height: 16px;
+                font-size: 20px;
+                color: $hamburger-color;
+            }
+        }
+        .row {
+            @include row-display;
+            padding-bottom: 18px;
+            border-bottom: thin solid #2c2c2c;
+            color: $hamburger-color;
+
+            .column-icons {
+                @include menu-options;
+                position: relative; 
+                justify-content: center;                               
+                font-size: 10px;
+
+                i {
+                    @include arrangement-text;
+                    justify-content: center;                                       
+                    
+                    &:hover {
+                        background-color: $menu-bg-hover;
+                        border-left: 4px solid $buttons-color;
+                        color: $header-bg-color;
+                        
+                    }                                          
+                }
+
+                .column-text {
+                    @include menu-options;                                        
+
+                    position: absolute;
+                    left: 50px;
+                    bottom: 0; 
+                    width: 138px;                                                          
+                    background: rgba(0, 0, 0, 0);
+    
+                    a {
+                        @include arrangement-text;
+                        @include menu-on-hover;
+                        
+                        width: 100%;
+                        font-size: 14px;
+                        color: $hamburger-color;
+                        text-decoration: none;
+                    }
+                }
+            }            
+        }
+    }
+    .column-manager {
+        @include column-display;
+        padding: 30px 0 0 20px;
+
+        .manager-header {
+            font-size: 14px;
+            font-weight: 500;
+            color: $menu-manager-header-color;            
+        }
+        .manager-data {
+            @include row-display;
+            align-items: center;
+            padding-top: 20px;
+
+            .manager-name {
+                @include on-link-hover;
+
+                font-size: 14px;
+                color: $links-color;
+                padding-left: 15px;
+                text-decoration: none;
+            }
+        }
+    }
+}

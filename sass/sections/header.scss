@@ -21,14 +21,14 @@
             @include header-columns;
 
             .icon-wallet {
-                @include on-hover;
+                @include on-link-hover;
 
                 width: 17px;
                 height: 19px;
-                font-size: 18px;                
+                font-size: 18px;                 
             }
             .payment {
-                @include on-hover;
+                @include on-link-hover;
 
                 height: 19px;
                 padding: 0 15px;
@@ -36,7 +36,7 @@
                 font-weight: 400;
             }
             .icon-arrow-down-small {
-                @include on-hover;
+                @include on-link-hover;
 
                 width: 11px;
                 height: 7px;
@@ -47,7 +47,7 @@
             @include header-columns;            
 
             .icon-notification {
-                @include on-hover;
+                @include on-link-hover;
 
                 position: relative;  
                 width: 16px;
@@ -71,13 +71,13 @@
             @include header-columns;
 
             .icon-profile {
-                @include on-hover;
+                @include on-link-hover;
 
                 width: 17px;
                 height: 17px;
             }
             .profile-name {
-                @include on-hover;
+                @include on-link-hover;
 
                 padding-left: 15px;
                 color: $links-color;
@@ -88,7 +88,7 @@
             @include header-columns;
 
             .icon-quit {
-                @include on-hover;
+                @include on-link-hover;
 
                 width: 19px;
                 height: 15px;
