@@ -1,0 +1,98 @@
+@import "../variables";
+@import "../mixins";
+
+.header {
+    background-color: $header-bg-color;
+    width: calc(100% - 188px);    
+    height: 60px;
+    display: flex; 
+    border: thin solid #e3e3e3;
+    margin-left: 188px; 
+    position: fixed;    
+
+    .row {       
+        height: 100%; 
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;               
+
+        .wallet {
+            @include header-columns;
+
+            .icon-wallet {
+                @include on-hover;
+
+                width: 17px;
+                height: 19px;
+                font-size: 18px;                
+            }
+            .payment {
+                @include on-hover;
+
+                height: 19px;
+                padding: 0 15px;
+                font-size: 20px;
+                font-weight: 400;
+            }
+            .icon-arrow-down-small {
+                @include on-hover;
+
+                width: 11px;
+                height: 7px;
+                font-size: 8px;
+            }
+        }
+        .notify {
+            @include header-columns;            
+
+            .icon-notification {
+                @include on-hover;
+
+                position: relative;  
+                width: 16px;
+                height: 17px;              
+
+                .notify-point {
+                    position: absolute;
+                    transform: translateY(-50%);               
+                    top: 50%;
+                    left: 50%;
+                    left: 50%;    
+                    top: 0;                
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background-color: $buttons-color;
+                }
+            }            
+        }
+        .profile {
+            @include header-columns;
+
+            .icon-profile {
+                @include on-hover;
+
+                width: 17px;
+                height: 17px;
+            }
+            .profile-name {
+                @include on-hover;
+
+                padding-left: 15px;
+                color: $links-color;
+                font-size: 13px;
+            }            
+        }
+        .exit {
+            @include header-columns;
+
+            .icon-quit {
+                @include on-hover;
+
+                width: 19px;
+                height: 15px;
+            }
+        }
+    }    
+}
