@@ -1,0 +1,46 @@
+@import "variables";
+
+@mixin column-display {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin row-display {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin header-columns {
+    @include row-display;
+    border-left: thin solid #e3e3e3;    
+    justify-content: center;
+    align-items: center;
+    color: #9c9c9c;
+}
+
+@mixin on-link-hover {
+    &:hover {
+        cursor: pointer;
+        color: $link-hover-color;
+    }
+}
+
+@mixin menu-header {
+    @include row-display;
+    align-items: center;
+}
+
+@mixin menu-options { 
+    @include column-display;
+    flex-wrap: wrap;    
+    font-weight: 300;
+
+}
+
+@mixin arrangement-text {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+

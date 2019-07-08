@@ -1,7 +1,10 @@
 @import "variables";
 @import "mixins";
-
+@import "../icon-dist/icons.css";
 @import "../node_modules/normalize.css/normalize.css";
 @import "layout";
+@import "sections/header.scss";
+@import "sections/menu.scss";
 
-@import "../icon-dist/icons.css"
+
+
