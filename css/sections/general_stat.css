@@ -1,0 +1,30 @@
+/* Colors */
+/* Font sizes */
+/* Fonts */
+/* Colors */
+/* Font sizes */
+/* Fonts */
+.general {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+
+.general .general-header {
+  border-bottom: thin solid #e3e3e3;
+  color: #a6a6a6;
+  height: 46px;
+  display: flex;
+  align-items: center;
+}
+
+.general .general-header p {
+  margin: 0;
+  padding-left: 17px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 42px;
+}
+
+/*# sourceMappingURL=general_stat.css.map */

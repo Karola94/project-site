@@ -1,0 +1,28 @@
+@import "../variables";
+@import "../mixins";
+
+
+
+    .general {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: $header-bg-color;
+
+        .general-header {
+            border-bottom: thin solid $border-color;
+            color: $main-sections-header;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            
+
+            p {
+                margin: 0;
+                padding-left: 17px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 42px;
+            }
+        }
+    }

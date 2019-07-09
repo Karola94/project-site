@@ -4,25 +4,16 @@
 /* Colors */
 /* Font sizes */
 /* Fonts */
-.header {
-  background-color: #ffffff;
-  width: calc(100% - 188px);
-  height: 60px;
-  display: flex;
-  border: thin solid #e3e3e3;
-  margin-left: 188px;
-  position: fixed;
-}
-
-.header .row {
+.row {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  background-color: #ffffff;
 }
 
-.header .row .wallet {
+.row .wallet {
   display: flex;
   flex-direction: row;
   border-left: thin solid #e3e3e3;
@@ -31,41 +22,41 @@
   color: #9c9c9c;
 }
 
-.header .row .wallet .icon-wallet {
+.row .wallet .icon-wallet {
   width: 17px;
   height: 19px;
   font-size: 18px;
 }
 
-.header .row .wallet .icon-wallet:hover {
+.row .wallet .icon-wallet:hover {
   cursor: pointer;
   color: #7aaacc;
 }
 
-.header .row .wallet .payment {
+.row .wallet .payment {
   height: 19px;
   padding: 0 15px;
   font-size: 20px;
   font-weight: 400;
 }
 
-.header .row .wallet .payment:hover {
+.row .wallet .payment:hover {
   cursor: pointer;
   color: #7aaacc;
 }
 
-.header .row .wallet .icon-arrow-down-small {
+.row .wallet .icon-arrow-down-small {
   width: 11px;
   height: 7px;
   font-size: 8px;
 }
 
-.header .row .wallet .icon-arrow-down-small:hover {
+.row .wallet .icon-arrow-down-small:hover {
   cursor: pointer;
   color: #7aaacc;
 }
 
-.header .row .notify {
+.row .notify {
   display: flex;
   flex-direction: row;
   border-left: thin solid #e3e3e3;
@@ -74,18 +65,18 @@
   color: #9c9c9c;
 }
 
-.header .row .notify .icon-notification {
+.row .notify .icon-notification {
   position: relative;
   width: 16px;
   height: 17px;
 }
 
-.header .row .notify .icon-notification:hover {
+.row .notify .icon-notification:hover {
   cursor: pointer;
   color: #7aaacc;
 }
 
-.header .row .notify .icon-notification .notify-point {
+.row .notify .icon-notification .notify-point {
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
@@ -98,7 +89,7 @@
   background-color: #f58220;
 }
 
-.header .row .profile {
+.row .profile {
   display: flex;
   flex-direction: row;
   border-left: thin solid #e3e3e3;
@@ -107,28 +98,28 @@
   color: #9c9c9c;
 }
 
-.header .row .profile .icon-profile {
+.row .profile .icon-profile {
   width: 17px;
   height: 17px;
 }
 
-.header .row .profile .icon-profile:hover {
+.row .profile .icon-profile:hover {
   cursor: pointer;
   color: #7aaacc;
 }
 
-.header .row .profile .profile-name {
+.row .profile .profile-name {
   padding-left: 15px;
   color: #56819f;
   font-size: 13px;
 }
 
-.header .row .profile .profile-name:hover {
+.row .profile .profile-name:hover {
   cursor: pointer;
   color: #7aaacc;
 }
 
-.header .row .exit {
+.row .exit {
   display: flex;
   flex-direction: row;
   border-left: thin solid #e3e3e3;
@@ -137,12 +128,12 @@
   color: #9c9c9c;
 }
 
-.header .row .exit .icon-quit {
+.row .exit .icon-quit {
   width: 19px;
   height: 15px;
 }
 
-.header .row .exit .icon-quit:hover {
+.row .exit .icon-quit:hover {
   cursor: pointer;
   color: #7aaacc;
 }
