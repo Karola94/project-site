@@ -4,25 +4,88 @@
 
 
     .general {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        background-color: $header-bg-color;
+        @include sections-in-main;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
         .general-header {
+            @include sections-in-main-header;                
+        }
+        .date-container {
+            @include row-display; 
+            height: 110px;
             border-bottom: thin solid $border-color;
-            color: $main-sections-header;
-            height: 46px;
-            display: flex;
             align-items: center;
-            
+            justify-content: center;            
 
-            p {
-                margin: 0;
-                padding-left: 17px;
+            .dates {
+                @include row-display;
+                height: 40px;                
+                align-items: center;
+                border: 1px solid $border-color; 
+                margin-right: 13px;   
+                border-radius: 3px;            
+
+                input {
+                    border: none;
+                    padding-left: 10px;
+                }
+                .icon-calendar {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 10px;
+                    color: #9c9c9c;
+                }
+            }
+            .refresh {
+                @include buttons-style;
+                width: 40px;
+                height: 40px;                
                 font-size: 16px;
                 font-weight: 500;
-                line-height: 42px;
+
+                i {
+                    display: flex;
+                    align-items: center;
+                }                
+            }
+        }
+        .stats {
+            @include row-display;
+            justify-content: center;            
+
+            .stat-col {
+                @include column-display;
+                padding: 40px;
+
+                .stat-row {
+                    @include row-display;
+                    justify-content: space-between;
+                    padding-top: 10px;
+                    border-bottom: 1px solid $border-color;
+
+                    .stat-name {
+                        @include main-section-font;                        
+                    }
+                }
+
+            }
+        }
+        .earnings-chart {
+            @include column-display;
+            @include main-section-font;            
+            justify-content: center;
+            padding: 40px;
+
+            .earnings-header {
+                padding-left: 40px;
+            }
+            .stat-image {
+                display: flex;
+                justify-content: center;
+                padding: 40px;
+            }
+            .center {
+                align-self: center;
             }
         }
     }

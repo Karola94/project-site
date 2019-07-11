@@ -43,4 +43,46 @@
     align-items: center;
 }
 
+@mixin main-section-font {
+    font-weight: 700;
+    font-size: 16px; 
+    color: $stat-color;
+}
 
+@mixin buttons-style {
+    background-color: $buttons-color;
+    color: $header-bg-color;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: $buttons-on-hover;
+        cursor: pointer;
+    }
+}
+
+@mixin sections-in-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $header-bg-color;
+    margin-top: 22px;
+}
+
+@mixin sections-in-main-header {
+    border-bottom: thin solid $border-color;
+    color: $main-sections-header;
+    height: 46px;
+    display: flex;
+    align-items: center;
+
+    p {
+        margin: 0;
+        padding-left: 17px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 42px;
+    }
+}

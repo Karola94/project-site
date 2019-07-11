@@ -1,0 +1,94 @@
+@import "../variables";
+@import "../mixins";
+
+
+.links {
+    @include sections-in-main;    
+
+    .links-header {
+        @include sections-in-main-header;
+    }
+    .links-body {
+        @include column-display;        
+
+        .center {
+            align-self: center;
+        }
+        .add-link-button {
+            @include buttons-style;
+            height: 40px;
+            width: 127px;             
+            margin: 23px 0;          
+        }
+        .links-list {
+            padding: 0;
+
+            .list-row {
+                @include row-display;
+                align-items: center;
+                border-bottom: 1px solid $border-color;
+                transition: background-color 0.5s ease;
+
+                &:hover {                    
+                    background-color: rgba(177, 191, 191, 0.18); 
+                    
+                    .link-icons {
+                        visibility: visible;                        
+                    }
+                }
+
+                &:first-child {
+                    border-top: 1px solid $border-color;
+                }
+                .link-name {
+                    width: 41.66%;
+                    margin-left: 25px;
+                    color: $stat-color;
+                    font-weight: 700;
+                }
+                .links-link {                    
+                    width: 41.66%;
+                    
+                    a {
+                        text-decoration: none;
+                        color: $links-color;
+
+                        &:hover {
+                            color: $link-hover-color;
+                        }
+                    }
+                    
+                }
+                .link-icons {
+                    @include row-display;
+                    justify-content: flex-end;
+                    width: 16.66%;
+                    margin-right: 25px; 
+                    visibility: hidden;                     
+                    
+                    .icon-links {
+                        display: flex;
+                        align-items: center;
+                        color: $buttons-color;
+                        font-size: 10px;
+                        margin-right: 23px; 
+                        
+                        &:hover {
+                            color: $buttons-on-hover;
+                            cursor: pointer;
+                        }
+                    }
+                    .icon-trash {
+                        color: #9c9c9c;
+
+                        &:hover {
+                            color: $menu-font-color;
+                            cursor: pointer;
+                        }
+                    }
+
+                }
+            }
+        }        
+    }
+}
