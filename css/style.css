@@ -281,18 +281,40 @@ body .col-12 {
   position: relative;
   padding-left: 50px;
   font-size: 14px;
-  color: #999999;
   text-decoration: none;
   transition: border-left 0.5s ease, background-color 0.5s ease;
-}
-
-.column-options .column-icons .option:hover {
-  background-color: #282828;
-  border-left: 4px solid #f58220;
-  color: #ffffff;
+  color: #999999;
 }
 
 .column-options .column-icons .option i {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 18px;
+  font-size: 10px;
+}
+
+.column-options .column-icons .option:hover {
+  color: #ffffff;
+  background-color: #282828;
+  border-left: 4px solid #f58220;
+}
+
+.column-options .column-icons .active {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 50px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: border-left 0.5s ease, background-color 0.5s ease;
+  color: #ffffff;
+  background-color: #282828;
+  border-left: 4px solid #f58220;
+}
+
+.column-options .column-icons .active i {
   position: absolute;
   transform: translateY(-50%);
   top: 50%;

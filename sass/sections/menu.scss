@@ -29,29 +29,18 @@
             justify-content: center;            
 
             .option {
-                @include arrangement-text;
-                position: relative; 
-                padding-left: 50px; 
-                font-size: 14px;
+                @include menu-link;                
                 color: $hamburger-color;
-                text-decoration: none;                 
-                transition: border-left 0.5s ease, background-color 0.5s ease;                                      
                 
                 &:hover {
-                    background-color: $menu-bg-hover;
-                    border-left: 4px solid $buttons-color;
-                    color: $header-bg-color;                    
-                }  
-                i {
-                    position: absolute;
-                    transform: translateY(-50%);
-                    top: 50%;
-                    left: 18px;
-                    font-size: 10px;
-                }                                        
-            }                
-        }            
-        
+                    @include menu-link-hover;                    
+                }                                                        
+            } 
+            .active {
+                @include menu-link;
+                @include menu-link-hover;
+            }               
+        }         
     }
     .column-manager {
         @include column-display;

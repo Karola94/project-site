@@ -43,6 +43,29 @@
     align-items: center;
 }
 
+@mixin menu-link {
+    @include arrangement-text;
+        position: relative; 
+        padding-left: 50px; 
+        font-size: 14px;                
+        text-decoration: none;                 
+        transition: border-left 0.5s ease, background-color 0.5s ease;                
+                
+        i {
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            left: 18px;
+            font-size: 10px;
+        } 
+}
+
+@mixin menu-link-hover {
+    color: $header-bg-color;
+    background-color: $menu-bg-hover;
+    border-left: 4px solid $buttons-color;
+}
+
 @mixin main-section-font {
     font-weight: 700;
     font-size: 16px; 
