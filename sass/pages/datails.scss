@@ -1,0 +1,10 @@
+@import "../variables";
+@import "../mixins";
+
+.details {
+    @include sections-in-main;
+
+    .details-header {
+        @include sections-in-main-header;
+    }
+}
