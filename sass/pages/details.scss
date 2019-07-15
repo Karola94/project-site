@@ -7,4 +7,7 @@
     .details-header {
         @include sections-in-main-header;
     }
+    .date-container {
+        @include date;             
+    }
 }
