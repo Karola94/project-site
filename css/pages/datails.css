@@ -1,0 +1,11 @@
+/* Colors */
+/* Font sizes */
+/* Fonts */
+/* Colors */
+/* Font sizes */
+/* Fonts */
+.details { display: flex; justify-content: center; flex-wrap: wrap; background-color: #ffffff; margin-top: 22px; }
+
+.details .details-header { border-bottom: thin solid #e3e3e3; color: #a6a6a6; height: 46px; display: flex; align-items: center; }
+
+.details .details-header p { margin: 0; padding-left: 17px; font-size: 16px; font-weight: 500; line-height: 42px; }

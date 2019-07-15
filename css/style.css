@@ -380,7 +380,6 @@ body .col-12 {
   flex-wrap: wrap;
   background-color: #ffffff;
   margin-top: 22px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .general .general-header {
@@ -501,6 +500,10 @@ body .col-12 {
 
 .general .earnings-chart .center {
   align-self: center;
+}
+
+.shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Colors */
@@ -632,6 +635,90 @@ body .col-12 {
 .links .links-body .links-list .list-row .link-icons .icon-trash:hover {
   color: #818181;
   cursor: pointer;
+}
+
+/* Colors */
+/* Font sizes */
+/* Fonts */
+/* Colors */
+/* Font sizes */
+/* Fonts */
+.details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  margin-top: 22px;
+}
+
+.details .details-header {
+  border-bottom: thin solid #e3e3e3;
+  color: #a6a6a6;
+  height: 46px;
+  display: flex;
+  align-items: center;
+}
+
+.details .details-header p {
+  margin: 0;
+  padding-left: 17px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 42px;
+}
+
+.details .date-container {
+  display: flex;
+  flex-direction: row;
+  height: 110px;
+  border-bottom: thin solid #e3e3e3;
+  align-items: center;
+  justify-content: center;
+}
+
+.details .date-container .dates {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  align-items: center;
+  border: 1px solid #e3e3e3;
+  margin-right: 13px;
+  border-radius: 3px;
+}
+
+.details .date-container .dates input {
+  border: none;
+  padding-left: 10px;
+}
+
+.details .date-container .dates .icon-calendar {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  color: #9c9c9c;
+}
+
+.details .date-container .refresh {
+  background-color: #f58220;
+  color: #ffffff;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.details .date-container .refresh:hover {
+  background-color: #f77606;
+  cursor: pointer;
+}
+
+.details .date-container .refresh i {
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
