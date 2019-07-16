@@ -149,3 +149,10 @@
         }                
     }
 }
+
+@mixin details-table {
+    font-size: 13px;                         
+    height: 30px;
+    padding-left: 30px;
+    min-width: 130px;
+}
