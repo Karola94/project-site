@@ -13,6 +13,10 @@ body {
     min-height: 1724px;
     overflow: auto;
     display: flex;
+
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
     
 
     .header {        
@@ -22,6 +26,11 @@ body {
         border: thin solid $border-color;
         margin-left: 188px; 
         position: fixed; 
+
+        @media (max-width: 768px) {
+            margin: 0;
+            height: auto;
+        }
     }
 
     .menu {
@@ -29,6 +38,10 @@ body {
         background-color: $menu-bg-color;
         width: 188px;
         height: 100vh;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     .main {

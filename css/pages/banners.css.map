@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "banners.css",
+	"sources": [
+		"../../sass/pages/banners.scss",
+		"../../sass/_variables.scss",
+		"../../sass/_mixins.scss"
+	],
+	"names": [],
+	"mappings": "ACAA,YAAY;AAiBZ,gBAAgB;AAGhB,WAAW;AApBX,YAAY;AAiBZ,gBAAgB;AAGhB,WAAW"
+}

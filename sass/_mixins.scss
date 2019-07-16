@@ -156,3 +156,9 @@
     padding-left: 30px;
     min-width: 130px;
 }
+@mixin header-on-phone {
+    width: 100%;
+    height: 50px;
+    border-left: none;
+    border-bottom: thin solid #e3e3e3;       
+}

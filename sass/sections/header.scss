@@ -3,14 +3,26 @@
 
    
 
-    .row {       
+    .row {
+        @include row-display;       
         height: 100%; 
-        width: 100%;
-        display: flex;
-        flex-direction: row;
+        width: 100%;        
         justify-content: flex-end;
-        background-color: $header-bg-color;               
+        background-color: $header-bg-color;        
 
+        .open-sidebar {
+            display: none;
+            background-color: $border-color;
+            
+            //Hamburger on phones
+            @media (max-width: 768px) {
+                @include header-columns;
+                @include header-on-phone;
+                @include on-link-hover;
+                display: flex;
+                font-size: 30px;                
+            }
+        }
         .wallet {
             @include header-columns;
 
@@ -36,9 +48,15 @@
                 height: 7px;
                 font-size: 8px;
             }
+
+            //Wallet on phones
+            @media (max-width: 768px) {
+                @include header-on-phone;
+                @include on-link-hover;                                
+            }
         }
         .notify {
-            @include header-columns;            
+            @include header-columns;          
 
             .icon-notification {
                 @include on-link-hover;
@@ -59,10 +77,16 @@
                     border-radius: 50%;
                     background-color: $buttons-color;
                 }
-            }            
+            } 
+            
+            //Notify on phones
+            @media (max-width: 768px) {
+                @include header-on-phone;
+                @include on-link-hover;                 
+            }
         }
         .profile {
-            @include header-columns;
+            @include header-columns;           
 
             .icon-profile {
                 @include on-link-hover;
@@ -76,10 +100,20 @@
                 padding-left: 15px;
                 color: $links-color;
                 font-size: 13px;
+            }
+
+            //Profile on phones
+            @media (max-width: 768px) {
+                @include header-on-phone;
+                @include on-link-hover;                
+                
+                &:hover .profile-name {
+                    color: $link-hover-color;
+                }
             }            
         }
         .exit {
-            @include header-columns;
+            @include header-columns;          
 
             .icon-quit {
                 @include on-link-hover;
@@ -87,5 +121,17 @@
                 width: 19px;
                 height: 15px;
             }
+
+            //Exit on phones
+            @media (max-width: 768px) {
+                @include header-on-phone;
+                @include on-link-hover;
+                border-bottom: none;
+            }
+        }
+
+        //Row on phones
+        @media (max-width: 768px) {
+            @include column-display;                                   
         }
     }    

@@ -25,6 +25,12 @@ body {
   display: flex;
 }
 
+@media (max-width: 768px) {
+  body {
+    justify-content: center;
+  }
+}
+
 body .header {
   width: calc(100% - 188px);
   height: 60px;
@@ -34,11 +40,24 @@ body .header {
   position: fixed;
 }
 
+@media (max-width: 768px) {
+  body .header {
+    margin: 0;
+    height: auto;
+  }
+}
+
 body .menu {
   position: fixed;
   background-color: #191919;
   width: 188px;
   height: 100vh;
+}
+
+@media (max-width: 768px) {
+  body .menu {
+    display: none;
+  }
 }
 
 body .main {
@@ -100,12 +119,38 @@ body .col-12 {
 /* Font sizes */
 /* Fonts */
 .row {
-  height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: row;
+  height: 100%;
+  width: 100%;
   justify-content: flex-end;
   background-color: #ffffff;
+}
+
+.row .open-sidebar {
+  display: none;
+  background-color: #e3e3e3;
+}
+
+@media (max-width: 768px) {
+  .row .open-sidebar {
+    display: flex;
+    flex-direction: row;
+    border-left: thin solid #e3e3e3;
+    justify-content: center;
+    align-items: center;
+    color: #9c9c9c;
+    width: 100%;
+    height: 50px;
+    border-left: none;
+    border-bottom: thin solid #e3e3e3;
+    display: flex;
+    font-size: 30px;
+  }
+  .row .open-sidebar:hover {
+    cursor: pointer;
+    color: #7aaacc;
+  }
 }
 
 .row .wallet {
@@ -151,6 +196,19 @@ body .col-12 {
   color: #7aaacc;
 }
 
+@media (max-width: 768px) {
+  .row .wallet {
+    width: 100%;
+    height: 50px;
+    border-left: none;
+    border-bottom: thin solid #e3e3e3;
+  }
+  .row .wallet:hover {
+    cursor: pointer;
+    color: #7aaacc;
+  }
+}
+
 .row .notify {
   display: flex;
   flex-direction: row;
@@ -184,6 +242,19 @@ body .col-12 {
   background-color: #f58220;
 }
 
+@media (max-width: 768px) {
+  .row .notify {
+    width: 100%;
+    height: 50px;
+    border-left: none;
+    border-bottom: thin solid #e3e3e3;
+  }
+  .row .notify:hover {
+    cursor: pointer;
+    color: #7aaacc;
+  }
+}
+
 .row .profile {
   display: flex;
   flex-direction: row;
@@ -214,6 +285,22 @@ body .col-12 {
   color: #7aaacc;
 }
 
+@media (max-width: 768px) {
+  .row .profile {
+    width: 100%;
+    height: 50px;
+    border-left: none;
+    border-bottom: thin solid #e3e3e3;
+  }
+  .row .profile:hover {
+    cursor: pointer;
+    color: #7aaacc;
+  }
+  .row .profile:hover .profile-name {
+    color: #7aaacc;
+  }
+}
+
 .row .exit {
   display: flex;
   flex-direction: row;
@@ -231,6 +318,27 @@ body .col-12 {
 .row .exit .icon-quit:hover {
   cursor: pointer;
   color: #7aaacc;
+}
+
+@media (max-width: 768px) {
+  .row .exit {
+    width: 100%;
+    height: 50px;
+    border-left: none;
+    border-bottom: thin solid #e3e3e3;
+    border-bottom: none;
+  }
+  .row .exit:hover {
+    cursor: pointer;
+    color: #7aaacc;
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Colors */
@@ -809,6 +917,7 @@ body .col-12 {
   color: #56819f;
   font-size: 16px;
   font-weight: 400;
+  transition: background-color 0.5s ease;
 }
 
 .details .pagin a i {
@@ -825,5 +934,12 @@ body .col-12 {
 .details .pagin a:hover i {
   font-weight: 900;
 }
+
+/* Colors */
+/* Font sizes */
+/* Fonts */
+/* Colors */
+/* Font sizes */
+/* Fonts */
 
 /*# sourceMappingURL=style.css.map */
