@@ -12,15 +12,16 @@
 
         .open-sidebar {
             display: none;
-            background-color: $border-color;
-            
+            background-color: $menu-bg-color;
+
             //Hamburger on phones
             @media (max-width: 768px) {
                 @include header-columns;
                 @include header-on-phone;
                 @include on-link-hover;
                 display: flex;
-                font-size: 30px;                
+                font-size: 30px;  
+                color: $header-bg-color;              
             }
         }
         .wallet {

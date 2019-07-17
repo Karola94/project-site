@@ -148,6 +148,26 @@
             align-items: center;
         }                
     }
+
+    @media (max-width: 768px) {
+        
+
+        .dates {
+            @include column-display;
+            position: relative;
+            height: auto;
+            margin: 40px 10px 40px 0;
+
+            .first {
+                border-bottom: 1px solid $border-color;                
+            }
+            .icon-calendar {
+                position: absolute;
+                right: 10px;
+                top: 4px;
+            }
+        }       
+    }
 }
 
 @mixin details-table {

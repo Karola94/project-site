@@ -86,7 +86,31 @@
                             cursor: pointer;
                         }
                     }
+                }            
+            }
 
+            //Links-link on phones
+            @media (max-width: 830px) {
+                width: 83.33%;
+
+                .list-row {
+                    @include column-display;                    
+
+                    .link-name {
+                        width: 100%;
+                    }
+                    .links-link {
+                        width: 100%;
+                        
+                        a {
+                            margin-left: 25px;
+                        }
+                        
+                    }
+                    .link-icons {
+                        visibility: visible;
+                        margin: 20px 0;
+                    }
                 }
             }
         }        

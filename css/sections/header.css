@@ -15,7 +15,7 @@
 
 .row .open-sidebar {
   display: none;
-  background-color: #e3e3e3;
+  background-color: #191919;
 }
 
 @media (max-width: 768px) {
@@ -32,6 +32,7 @@
     border-bottom: thin solid #e3e3e3;
     display: flex;
     font-size: 30px;
+    color: #ffffff;
   }
   .row .open-sidebar:hover {
     cursor: pointer;

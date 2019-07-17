@@ -82,6 +82,24 @@
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .details .date-container .dates {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    margin: 40px 10px 40px 0;
+  }
+  .details .date-container .dates .first {
+    border-bottom: 1px solid #e3e3e3;
+  }
+  .details .date-container .dates .icon-calendar {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+  }
+}
+
 .details .details-body {
   display: flex;
   justify-content: center;

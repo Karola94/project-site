@@ -10,7 +10,7 @@
             @include sections-in-main-header;                
         }
         .date-container {
-            @include date;             
+            @include date;           
         }
         .stats {
             @include row-display;
@@ -32,6 +32,17 @@
                 }
 
             }
+
+            //Stats on phones
+            @media (max-width: 830px) {
+                @include column-display;
+                
+                .stat-col {
+                    width: 83.33%;
+                    align-self: center;
+                    padding: 40px 20px;                    
+                }
+            }
         }
         .earnings-chart {
             @include column-display;
@@ -46,6 +57,17 @@
                 display: flex;
                 justify-content: center;
                 padding: 40px;
+
+                //Stat-image on phones
+                @media (max-width: 830px) {
+                    overflow: auto;
+                    padding: 40px 0;
+                    img {                        
+                        max-width: 300px; 
+                        background-size: cover;                                               
+                    }       
+                    
+                }
             }
             .center {
                 align-self: center;
