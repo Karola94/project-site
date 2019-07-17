@@ -1,0 +1,53 @@
+/* Colors */
+/* Font sizes */
+/* Fonts */
+/* Colors */
+/* Font sizes */
+/* Fonts */
+.general { display: flex; justify-content: center; flex-wrap: wrap; background-color: #ffffff; margin-top: 22px; }
+
+.general .general-header { border-bottom: thin solid #e3e3e3; color: #a6a6a6; height: 46px; display: flex; align-items: center; }
+
+.general .general-header p { margin: 0; padding-left: 17px; font-size: 16px; font-weight: 500; line-height: 42px; }
+
+.general .date-container { display: flex; flex-direction: row; height: 110px; border-bottom: thin solid #e3e3e3; align-items: center; justify-content: center; }
+
+.general .date-container .dates { display: flex; flex-direction: row; height: 40px; align-items: center; border: 1px solid #e3e3e3; margin-right: 13px; border-radius: 3px; }
+
+.general .date-container .dates input { border: none; padding-left: 10px; }
+
+.general .date-container .dates .icon-calendar { display: flex; align-items: center; margin-right: 10px; color: #9c9c9c; }
+
+.general .date-container .refresh { background-color: #f58220; color: #ffffff; border-radius: 3px; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; font-size: 16px; font-weight: 500; }
+
+.general .date-container .refresh:hover { background-color: #f77606; cursor: pointer; }
+
+.general .date-container .refresh i { display: flex; align-items: center; }
+
+@media (max-width: 768px) { .general .date-container .dates { display: flex; flex-direction: column; position: relative; height: auto; margin: 40px 10px 40px 0; }
+  .general .date-container .dates .first { border-bottom: 1px solid #e3e3e3; }
+  .general .date-container .dates .icon-calendar { position: absolute; right: 10px; top: 4px; } }
+
+.general .stats { display: flex; flex-direction: row; justify-content: center; }
+
+.general .stats .stat-col { display: flex; flex-direction: column; padding: 40px; }
+
+.general .stats .stat-col .stat-row { display: flex; flex-direction: row; justify-content: space-between; padding-top: 10px; border-bottom: 1px solid #e3e3e3; }
+
+.general .stats .stat-col .stat-row .stat-name { font-weight: 700; font-size: 16px; color: #a6a6a6; }
+
+@media (max-width: 830px) { .general .stats { display: flex; flex-direction: column; }
+  .general .stats .stat-col { width: 83.33%; align-self: center; padding: 40px 20px; } }
+
+.general .earnings-chart { display: flex; flex-direction: column; font-weight: 700; font-size: 16px; color: #a6a6a6; justify-content: center; padding: 40px; }
+
+.general .earnings-chart .earnings-header { padding-left: 40px; }
+
+.general .earnings-chart .stat-image { display: flex; justify-content: center; padding: 40px; }
+
+@media (max-width: 830px) { .general .earnings-chart .stat-image { overflow: auto; padding: 40px 0; }
+  .general .earnings-chart .stat-image img { max-width: 300px; background-size: cover; } }
+
+.general .earnings-chart .center { align-self: center; }
+
+.shadow { box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }

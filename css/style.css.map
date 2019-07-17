@@ -8,8 +8,8 @@
 		"../sass/_layout.scss",
 		"../sass/sections/header.scss",
 		"../sass/sections/menu.scss",
-		"../sass/sections/general_stat.scss",
-		"../sass/sections/links.scss",
+		"../sass/pages/general_stat.scss",
+		"../sass/pages/links.scss",
 		"../sass/pages/details.scss",
 		"../sass/pages/banners.scss"
 	],
